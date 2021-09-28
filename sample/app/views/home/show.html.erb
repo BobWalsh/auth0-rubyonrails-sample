@@ -3,3 +3,11 @@
   <h1>RoR Auth0 Sample</h1>
   <%= button_to 'Login', '/auth/auth0', method: :post, class: 'btn btn-success btn-lg', id: 'qsLoginBtn' unless session[:userinfo].present? %>
 </section>
+<section>
+  <h1>This is a test!</h1>
+  <h2>The vars are:</h2>
+  1 <%= ENV["AUTH0_CLIENT_ID"] %><br/>
+  2 <%= ENV["AUTH0_CLIENT_SECRET"] %><br/>
+  3 <%= ENV["AUTH0_DOMAIN"] %><br/>
+  4 <%= ENV["AUTH0_CALLBACK_URL"] %><br/>
+</section>
